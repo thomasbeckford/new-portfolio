@@ -8,15 +8,12 @@ import FloatingWhatsapp from "../components/Atoms/FloatingWhatsapp";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-slate-700 text-white">
       <Head>
-        <title>Thomas Portfolio</title>
-        <meta property="og:title" content="Titulo social de la landing" />
-        <meta
-          property="og:description"
-          content="Descripcion social de la landing"
-        />
-        <meta name="description" content="Descripcion de landing" key="desc" />
+        <title>Thomas E. Beckford</title>
+        <meta property="og:title" content="Thomas E. Beckford" key="title" />
+        <meta property="og:description" content="Thomas E. Beckford" />
+        <meta name="description" content="Thomas E. Beckford" key="desc" />
         <meta
           property="og:image"
           content="https://example.com/images/cool-page.jpg"

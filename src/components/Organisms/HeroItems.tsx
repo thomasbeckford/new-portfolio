@@ -48,7 +48,7 @@ export default function HeroItems() {
   ];
 
   return (
-    <div className="grid gap-4 grid-cols-1 justify-items-center sm:grid-cols-3 md:grid-cols-3">
+    <div className="grid gap-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
       {heroItems.map((item, index) => (
         <HeroItem key={index} item={item} />
       ))}

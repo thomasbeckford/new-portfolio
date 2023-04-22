@@ -48,7 +48,10 @@ export default function Projects() {
   };
 
   return (
-    <div id="projects" className="container mx-auto p-16 space-y-10">
+    <div
+      id="projects"
+      className="container mx-auto p-16 space-y-10 bg-slate-600 rounded-lg shadow-md"
+    >
       <h2 className="text-4xl text-center mb-20">
         Some of projects I&apos;ve worked on
       </h2>

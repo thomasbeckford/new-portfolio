@@ -15,17 +15,6 @@ export default function NavButtons() {
       >
         LinkedIn
       </Button>
-      <Button
-        rounded
-        onClick={() => {
-          window.open(
-            'https://api.whatsapp.com/send?phone=5491134908167&text=Hola!%20Quisiera%20mas%20informacion%20sobre%20el%20plan%20de%20SoyMenu"',
-            "_blank"
-          );
-        }}
-      >
-        Hire me!
-      </Button>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 export default function Logo() {
   return (
     <div>
-      <a className="flex-shrink-0 text-indigo-500" href="#">
-        TEBECK
+      <a className=" text-slate-200 text-xl" href="#">
+        Thomas E. Beckford
       </a>
     </div>
   );

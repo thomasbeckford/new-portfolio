@@ -9,17 +9,16 @@ export default function Navbar() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-slate-50 border-b border-slate-200 fixed w-full z-50">
+    <nav className="w-full">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           <div className="flex w-full justify-between">
             <div className="flex items-center">
               <Logo />
-              <div className="ml-10 hidden items-baseline space-x-4 md:flex ">
-                <NavLinks />
-              </div>
             </div>
-
+            <div className="ml-10 hidden items-baseline space-x-4 md:flex">
+              <NavLinks />
+            </div>
             <NavButtons />
           </div>
           <MobileBurger toggle={toggle} />

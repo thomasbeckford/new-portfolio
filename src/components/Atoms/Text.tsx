@@ -10,7 +10,7 @@ export default function Text(props: TextProps) {
   const { children, className, size = "md" } = props;
 
   const defaultStyles = {
-    text: "text-gray-900 font-light",
+    text: "text-white font-light",
   };
 
   const sizeStyles = {
@@ -21,7 +21,11 @@ export default function Text(props: TextProps) {
     title: "text-3xl",
   };
 
-  const classProps: string = classnames(defaultStyles.text, { [sizeStyles[size]]: size }, className);
+  const classProps: string = classnames(
+    defaultStyles.text,
+    { [sizeStyles[size]]: size },
+    className
+  );
 
   return <div className={classProps}>{children}</div>;
 }

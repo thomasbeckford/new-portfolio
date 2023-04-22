@@ -14,7 +14,7 @@ export default function HeroItem(props: HeroItemProps) {
   const { item } = props;
 
   return (
-    <div className="w-full text-center  shadow px-0 py-1 rounded-md md:w-auto md:min-h-72 md:p-5">
+    <div className="text-center bg-slate-600  shadow px-0 py-1 rounded-md md:p-5 ">
       <div className="max-w-20 h-20 relative mx-auto">
         <Image
           src={item.image}
@@ -25,11 +25,11 @@ export default function HeroItem(props: HeroItemProps) {
         />
       </div>
 
-      <Text size="xl" className="text-gray-800 mt-5">
+      <Text size="xl" className="font-bold mt-5">
         {item.title}
       </Text>
 
-      <Text size="sm" className="text-gray-300 mt-5">
+      <Text size="sm" className=" mt-5">
         {item.description}
       </Text>
     </div>
