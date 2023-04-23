@@ -40,9 +40,9 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="w-56 h-56 relative mx-auto">
+            <div className="w-36 h-36 relative mx-auto">
               <Image
-                src="/thomas_low_1.jpg"
+                src="/profile/thomas_yellow.jpeg"
                 alt="hero"
                 fill
                 className="object-contain rounded-full"

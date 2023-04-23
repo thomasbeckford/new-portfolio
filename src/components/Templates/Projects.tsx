@@ -56,14 +56,14 @@ export default function Projects() {
         Some of projects I&apos;ve worked on
       </h2>
 
-      <div className="grid gap-4 grid-cols-1  justify-items-center md:grid-cols-3">
+      <div className="grid gap-4 grid-cols-1  justify-items-center md:grid-cols-3  ">
         {projectItems.map((item) => (
           <div
             key={item.title}
-            className="w-full text-center space-y-5 hover:drop-shadow-xl transition-all cursor-pointer md:w-3/5"
+            className="w-full text-center space-y-5 hover:drop-shadow-xl transition-all  cursor-pointer md:w-3/5"
             onClick={() => openLink(item.href)}
           >
-            <div className="w-40 h-40 bg-gray-200 rounded-full relative mx-auto ">
+            <div className="w-20 h-20 bg-gray-200 rounded-full relative mx-auto md:w-40 md:h-40 ">
               <Image
                 src={item.image}
                 alt="soymenu"
