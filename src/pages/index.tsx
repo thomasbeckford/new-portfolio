@@ -14,10 +14,7 @@ export default function Home() {
         <meta property="og:title" content="Thomas E. Beckford" key="title" />
         <meta property="og:description" content="Thomas E. Beckford" />
         <meta name="description" content="Thomas E. Beckford" key="desc" />
-        <meta
-          property="og:image"
-          content="https://example.com/images/cool-page.jpg"
-        />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
       </Head>
       <Navbar />
       <Main />
