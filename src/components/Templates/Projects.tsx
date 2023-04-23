@@ -56,7 +56,7 @@ export default function Projects() {
         Some of projects I&apos;ve worked on
       </h2>
 
-      <div className="grid gap-4 grid-cols-1  justify-items-center md:grid-cols-3  ">
+      <div className="grid gap-4 justify-items-center md:grid-cols-3  ">
         {projectItems.map((item) => (
           <div
             key={item.title}

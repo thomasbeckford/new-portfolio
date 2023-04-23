@@ -11,7 +11,7 @@ export default function NavLink(props: LinkProps) {
   const { name, href, className } = props;
 
   const defaultStyles = {
-    link: "block px-3 py-2 rounded-md text-base font-light ",
+    link: "block px-3 py-2 rounded-md text-base font-bold",
   };
 
   const classProps: string = classnames(defaultStyles.link, className);

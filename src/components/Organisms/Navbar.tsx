@@ -2,16 +2,15 @@ import { useState } from "react";
 import Logo from "../Atoms/Logo";
 import MobileBurger from "../Atoms/MobileBurger";
 import NavLinks from "../Molecules/NavLinks";
-import NavButtons from "../Molecules/NavButtons";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="w-full">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center h-16">
+    <nav className="w-full md:p-10 md:pb-0">
+      <div className=" mx-auto px-6 md:px-16">
+        <div className="flex items-center h-16 ">
           <div className="flex w-full justify-between">
             <div className="flex items-center">
               <Logo />
@@ -19,7 +18,10 @@ export default function Navbar() {
             <div className="ml-10 hidden items-baseline space-x-4 md:flex">
               <NavLinks />
             </div>
-            <NavButtons />
+            <div className="hidden">
+              {/* TODO: Create nav buttons change theme (light dark) */}
+              {/* <NavButtons /> */}
+            </div>
           </div>
           <MobileBurger toggle={toggle} />
         </div>

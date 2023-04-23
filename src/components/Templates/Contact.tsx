@@ -18,25 +18,37 @@ export default function Contact() {
         </Text>
 
         <form onSubmit={handleSubmit}>
-          <div className="grid gap-3 grid-cols-1 mb-16 md:grid-cols-2">
+          <div className="grid gap-3 mb-16 md:grid-cols-2">
             <div className="space-y-4">
               <Text size="md">Name</Text>
-              <input type="text" className="w-full border-2 border-gray-200 rounded-md p-2" />
+              <input
+                type="text"
+                className="w-full border-2 border-gray-200 rounded-md p-2"
+              />
             </div>
 
             <div className="space-y-4">
               <Text size="md">Email</Text>
-              <input type="email" className="w-full border-2 border-gray-200 rounded-md p-2" />
+              <input
+                type="email"
+                className="w-full border-2 border-gray-200 rounded-md p-2"
+              />
             </div>
 
             <div className="space-y-4">
               <Text size="md">Phone</Text>
-              <input type="text" className="w-full border-2 border-gray-200 rounded-md p-2" />
+              <input
+                type="text"
+                className="w-full border-2 border-gray-200 rounded-md p-2"
+              />
             </div>
 
             <div className="space-y-4">
               <Text size="md">Company</Text>
-              <input type="text" className="w-full border-2 border-gray-200 rounded-md p-2" />
+              <input
+                type="text"
+                className="w-full border-2 border-gray-200 rounded-md p-2"
+              />
             </div>
           </div>
 

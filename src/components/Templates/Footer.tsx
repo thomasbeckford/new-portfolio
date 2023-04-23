@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className=" text-center bg-slate-600 lg:text-left mt-10">
       <div className="container mx-auto ">
         <div className="mx-6 py-10 text-center md:text-left">
-          <div className="grid-1 grid md:grid-cols-3 lg:grid-cols-3 md:justify-items-center">
+          <div className="grid-1 grid md:grid-cols-3 md:justify-items-center">
             <div className="w-full">
               <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
                 <svg

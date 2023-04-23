@@ -22,9 +22,10 @@ export default function Button(props: ButtonProps) {
   } = props;
 
   const defaultStyles = {
-    button: "px-4 py-2 text-white bg-indigo-600",
+    button:
+      "bg-white text-slate-900 font-bold border-2 border-gray-200 py-4 px-8",
     disabled: "opacity-50 cursor-not-allowed",
-    rounded: "rounded-md",
+    rounded: "rounded-full",
   };
 
   const sizeStyles = {

@@ -1,12 +1,7 @@
 import Image from "next/image";
-import NavButtons from "../Molecules/NavButtons";
+import CheckProfileButton from "../Molecules/CheckProfileButton";
 
 export default function Home() {
-  const nextSection = () => {
-    const ele = document.getElementById("experience");
-    if (ele) ele.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div id="home" className="container mx-auto">
       <div className="m-10 md:flex md:justify-center md:items-center md:m-0 md:mt-10 md:py-20">
@@ -16,29 +11,18 @@ export default function Home() {
               Helping businesses grow through technology and design doing
               quality code.
             </h3>
-            <NavButtons />
+            <CheckProfileButton />
           </div>
         </div>
 
-        <div className="relative h-36 w-36 mx-auto md:h-96 md:w-96">
+        <div className="relative h-64 w-64 mx-auto md:h-96 md:w-96">
           <Image
             src="/profile/thomas.jpg"
             fill
             alt="avatar"
-            className="rounded-full object-cover object-top"
+            className="rounded-full object-cover object-top shadow-2xl animate hover:animate-spin transition-all"
           />
         </div>
-      </div>
-
-      <div className="w-full">
-        <Image
-          src="/arrow-down-circle.svg"
-          className="mx-auto  cursor-pointer pb-5 mt-5"
-          onClick={nextSection}
-          width={50}
-          height={50}
-          alt="arrow"
-        />
       </div>
     </div>
   );
