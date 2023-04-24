@@ -12,7 +12,7 @@ export default function Experience() {
               alt="avatar"
               width={400}
               height={200}
-              className="rounded-md object-cover max-h-36 mx-auto md:max-h-64"
+              className="rounded-md object-cover max-h-36 w-auto mx-auto md:max-h-64"
             />
 
             <figcaption className="text-center text-sm">
@@ -24,7 +24,7 @@ export default function Experience() {
             <Image
               src="/profile/with_kent.jpg"
               alt="avatar"
-              className="rounded-md object-cover max-h-36 mx-auto md:max-h-64 object-y-4"
+              className="rounded-md object-cover max-h-36 w-auto object-y-4 mx-auto md:max-h-64"
               width={400}
               height={200}
             />

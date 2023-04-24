@@ -1,4 +1,4 @@
-import { navItems } from '../../constants/navItems';
+import { navItems } from "../../constants/navItems";
 import NavLink from "../Atoms/NavLink";
 
 export default function NavLinks() {

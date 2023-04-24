@@ -43,38 +43,43 @@ const projectItems = [
 ];
 
 export default function Projects() {
-  const openLink = (href: string) => {
-    window.open(href, "_blank");
+  const copyUrl = (href: string) => {
+    // tODO: Copy url on click
   };
 
   return (
     <div
       id="projects"
-      className="container mx-auto p-16 space-y-10 bg-slate-600 rounded-lg shadow-md"
+      className="container mx-auto  space-y-10 bg-slate-600 rounded-lg shadow-md p-0 md:p-16"
     >
       <h2 className="text-4xl text-center mb-20">
         Some of projects I&apos;ve worked on
       </h2>
 
-      <div className="grid gap-4 justify-items-center md:grid-cols-3  ">
+      <div className="grid gap-2 justify-items-center md:grid-cols-3">
         {projectItems.map((item) => (
-          <div
-            key={item.title}
-            className="w-full text-center space-y-5 hover:drop-shadow-xl transition-all  cursor-pointer md:w-3/5"
-            onClick={() => openLink(item.href)}
-          >
-            <div className="w-20 h-20 bg-gray-200 rounded-full relative mx-auto md:w-40 md:h-40 ">
-              <Image
-                src={item.image}
-                alt="soymenu"
-                fill
-                unoptimized
-                className="object-contain"
-              />
-            </div>
+          <div key={item.title} className="relative" id={`card-${item.title}`}>
+            <div className=" p-5 rounded-lg transition-all hover:bg-slate-500  ">
+              <div
+                className="gap-5 mx-auto w-full text-center space-y-5  transition-all cursor-pointer  md:flex "
+                onClick={() => copyUrl(item.href)}
+              >
+                <div className="w-20 h-20 relative mx-auto md:w-40 md:h-40 ">
+                  <Image
+                    src={item.image}
+                    alt="soymenu"
+                    fill
+                    unoptimized
+                    className="object-contain"
+                  />
+                </div>
 
-            <Text size="xl">{item.title}</Text>
-            <Text size="md">{item.description}</Text>
+                <div className="md:w-5/6">
+                  <Text size="xl">{item.title}</Text>
+                  <Text size="md">{item.description}</Text>
+                </div>
+              </div>
+            </div>
           </div>
         ))}
       </div>

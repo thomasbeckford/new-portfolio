@@ -8,14 +8,14 @@ export default function Navbar() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="w-full md:p-10 md:pb-0">
-      <div className=" mx-auto px-6 md:px-16">
-        <div className="flex items-center h-16 ">
+    <nav className=" mx-auto px-6 md:px-16 top-0 w-full bg-slate-500 z-10 ">
+      <div>
+        <div className="flex items-center h-16  md:h-28">
           <div className="flex w-full justify-between">
             <div className="flex items-center">
               <Logo />
             </div>
-            <div className="ml-10 hidden items-baseline space-x-4 md:flex">
+            <div className="hidden items-baseline space-x-4 md:flex ">
               <NavLinks />
             </div>
             <div className="hidden">
@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden `}>
+      <div className={`${isOpen ? "block " : "hidden"} md:hidden  `}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <NavLinks />
         </div>

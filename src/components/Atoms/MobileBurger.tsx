@@ -6,7 +6,7 @@ export default function MobileBurger(props: MobileBurgerType) {
   const { toggle } = props;
 
   return (
-    <div className="-mr-2 flex md:hidden">
+    <div className="-mr-2 flex md:hidden ">
       <button
         onClick={toggle}
         type="button"
@@ -23,7 +23,12 @@ export default function MobileBurger(props: MobileBurgerType) {
           stroke="currentColor"
           aria-hidden="true"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
 
         <svg
@@ -34,7 +39,12 @@ export default function MobileBurger(props: MobileBurgerType) {
           stroke="currentColor"
           aria-hidden="true"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
     </div>

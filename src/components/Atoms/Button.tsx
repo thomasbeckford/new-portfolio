@@ -29,9 +29,9 @@ export default function Button(props: ButtonProps) {
   };
 
   const sizeStyles = {
-    sm: "text-sm",
-    md: "text-base",
-    lg: "text-lg",
+    sm: "text-sm py-3 px-3",
+    md: "text-base py-4 px-8",
+    lg: "text-lg py-6 px-10",
   };
 
   const classProps: string = classnames(
