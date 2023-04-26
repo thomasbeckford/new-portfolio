@@ -7,10 +7,6 @@ const socialIcons = [
   {
     name: "twitter",
   },
-  // {
-  //   name: "instagram",
-  //   icon: IconInstagram,
-  // },
   {
     name: "linkedin",
   },

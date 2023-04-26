@@ -10,11 +10,14 @@ export default function Home() {
 
   return (
     <div id="home">
-      <div className="container mx-auto">
-        <div className="m-10 md:flex md:justify-center md:items-center md:m-0 md:mt-10 md:py-20">
+      <div className="container mx-auto relative">
+        <div className="m-10 md:flex md:justify-center md:items-center md:m-0 md:mt-10 md:pb-56">
           <div className="text-center md:w-5/12 md:mx-auto md:align-center">
             <div className="text-xl mb-10  md:mx-auto md:text-left md:text-5xl ">
-              <h3 className="mb-10">
+              <h3
+                className="mb-10 text-white"
+                style={{ textShadow: "1px 1px white" }}
+              >
                 Helping businesses grow through technology and design doing
                 quality code.
               </h3>

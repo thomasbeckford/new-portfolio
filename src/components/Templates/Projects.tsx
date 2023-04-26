@@ -1,5 +1,7 @@
 import Text from "../Atoms/Text";
 import Image from "next/image";
+import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 const projectItems = [
   {
@@ -43,8 +45,16 @@ const projectItems = [
 ];
 
 export default function Projects() {
-  const copyUrl = (href: string) => {
-    // tODO: Copy url on click
+  const [copyText, setCopyText] = useState("Click to copy url");
+
+  const copyUrl = (e: Event, href: string) => {
+    navigator.clipboard.writeText(href);
+    e.stopPropagation();
+    setCopyText("Copied!");
+  };
+
+  const openUrl = (href: string) => {
+    window.open(href, "_blank");
   };
 
   return (
@@ -52,19 +62,24 @@ export default function Projects() {
       id="projects"
       className="container mx-auto  space-y-10 bg-slate-600 rounded-lg shadow-md p-0 md:p-16"
     >
-      <h2 className="text-4xl text-center mb-20">
-        Some of projects I&apos;ve worked on
+      <h2 className="text-4xl text-center mb-20 pt-10 md:pt-0">
+        Some of the software development projects I&apos;ve contributed to.
       </h2>
 
-      <div className="grid gap-2 justify-items-center md:grid-cols-3">
+      <div className="grid gap-2 justify-items-center 2xl:grid-cols-3 xl:grid-cols-2">
         {projectItems.map((item) => (
-          <div key={item.title} className="relative" id={`card-${item.title}`}>
-            <div className=" p-5 rounded-lg transition-all hover:bg-slate-500  ">
-              <div
-                className="gap-5 mx-auto w-full text-center space-y-5  transition-all cursor-pointer  md:flex "
-                onClick={() => copyUrl(item.href)}
-              >
-                <div className="w-20 h-20 relative mx-auto md:w-40 md:h-40 ">
+          <div
+            key={item.title}
+            className="relative border-hover bg-gray-700 "
+            id={`card-${item.title}`}
+            onClick={() => openUrl(item.href)}
+            onMouseEnter={() => setCopyText("Click to copy url")}
+          >
+            <div className="p-5 h-40 rounded-lg hover:bg-slate-500 hover-img">
+              <div className="gap-5 mx-auto w-full text-center cursor-pointer  flex ">
+                <Toaster />
+
+                <figure className="w-20 h-24 relative mx-auto md:w-40 md:h-24 ">
                   <Image
                     src={item.image}
                     alt="soymenu"
@@ -72,10 +87,20 @@ export default function Projects() {
                     unoptimized
                     className="object-contain"
                   />
-                </div>
+                </figure>
+                <figcaption
+                  className="m-2"
+                  onClick={(e: any) => copyUrl(e, item.href)}
+                >
+                  <h3 className="px-3 py-2 border-4 border-transparent hover:border-red-500 bg-white rounded-lg text-black ">
+                    {copyText}
+                  </h3>
+                </figcaption>
 
-                <div className="md:w-5/6">
-                  <Text size="xl">{item.title}</Text>
+                <div className="w-5/6">
+                  <Text size="xl" className="mb-2">
+                    {item.title}
+                  </Text>
                   <Text size="md">{item.description}</Text>
                 </div>
               </div>

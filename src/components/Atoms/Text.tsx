@@ -4,10 +4,11 @@ type TextProps = {
   children: React.ReactNode;
   size?: "sm" | "md" | "lg" | "xl" | "title";
   className?: string;
+  style?: React.CSSProperties;
 };
 
 export default function Text(props: TextProps) {
-  const { children, className, size = "md" } = props;
+  const { children, className, size = "md", style } = props;
 
   const defaultStyles = {
     text: "text-white font-light",
@@ -27,5 +28,9 @@ export default function Text(props: TextProps) {
     className
   );
 
-  return <div className={classProps}>{children}</div>;
+  return (
+    <div className={classProps} style={style}>
+      {children}
+    </div>
+  );
 }

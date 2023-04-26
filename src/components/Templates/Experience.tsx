@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <div id="experience" className="container mx-auto p-5 md:p-16 space-y-10">
+    <div id="experience" className="container mx-auto py-10">
       <div className="md:flex md:justify-evenly mb-20 ">
-        <div className="md:flex gap-4 w-full">
+        <div className="gap-4 w-full space-y-10 lg:space-y-0 lg:flex ">
           <figure>
             <Image
               src="/profile/with_chris.jpeg"
@@ -15,7 +15,7 @@ export default function Experience() {
               className="rounded-md object-cover max-h-36 w-auto mx-auto md:max-h-64"
             />
 
-            <figcaption className="text-center text-sm">
+            <figcaption className="text-center text-sm w-56 mx-auto mt-2">
               With Christopher Chedeau (React Co-Creator)
             </figcaption>
           </figure>
@@ -28,8 +28,21 @@ export default function Experience() {
               width={400}
               height={200}
             />
-            <figcaption className="text-center text-sm">
+            <figcaption className="text-center text-sm w-56 mx-auto mt-2">
               With Kent C. Dodds (React Testing Library Creator)
+            </figcaption>
+          </figure>
+
+          <figure>
+            <Image
+              src="/profile/guitar.jpeg"
+              alt="avatar"
+              className="rounded-md object-cover max-h-36 w-auto object-y-4 mx-auto md:max-h-64"
+              width={400}
+              height={200}
+            />
+            <figcaption className="text-center text-sm w-56 mx-auto mt-2">
+              One of my hobbies is playing the guitar.
             </figcaption>
           </figure>
         </div>
@@ -41,9 +54,11 @@ export default function Experience() {
           </h2>
 
           <p className="text-lg text-center md:text-right">
-            With over 5 years of experience. I enjoy meeting new people and
-            learning new things. I am a self-taught developer who is always
-            looking for ways to improve my skills.
+            As a self-taught developer with over 5 years of experience, I am
+            passionate about meeting new people, playing musical instruments,
+            and continuously learning new things. I am always looking for ways
+            to improve my skills and stay up-to-date with the latest trends in
+            the industry.
           </p>
         </div>
       </div>
