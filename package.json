@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "cypress": "cypress open"
+    "lint": "next lint"
   },
   "dependencies": {
     "@tabler/icons-react": "^2.16.0",
@@ -16,7 +15,7 @@
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
     "classnames": "^2.3.2",
-    "cypress": "^12.10.0",
+    "csstype": "^3.1.2",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "next": "13.3.0",
@@ -28,8 +27,6 @@
     "vanilla-tilt": "^1.8.0"
   },
   "devDependencies": {
-    "csstype": "^3.0.10",
-    "cypress-react-unit-test": "^4.17.2",
-    "typescript": "^=3.4.0"
+    "typescript": "^5.0.4"
   }
 }
