@@ -13,36 +13,36 @@ export default function HeroItems() {
       title: "ReactJS & NextJS",
       description:
         "Using these tools to build performant and scalable web applications.",
-      href: "/",
+      href: "",
       image: "/react.png",
     },
     {
       title: "Tailwind CSS",
       description:
         "I use this utility-first CSS framework to build my projects.",
-      href: "/",
+      href: "",
       image: "/tailwind.png",
     },
 
     {
-      title: "GraphQL & REST",
+      title: "REST, GraphQL",
       description:
         "I have experience with both. I prefer GraphQL for its flexibility and performance. But depends on the project.",
-      href: "/",
+      href: "",
       image: "/graphql.png",
     },
     {
       title: "Node JS",
       description:
         "Backend services for my projects. I have experience with ExpressJS, NestJS, and Fastify.",
-      href: "/",
+      href: "",
       image: "/node.png",
     },
     {
       title: "Cypress & Jest",
       description:
         "Testing is a must for every project. I use these tools to test my projects.",
-      href: "/",
+      href: "",
       image: "/cypress.png",
     },
   ];

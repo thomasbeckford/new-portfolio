@@ -14,7 +14,7 @@ export default function HeroItem(props: HeroItemProps) {
   const { item } = props;
 
   return (
-    <div className="text-center bg-slate-600  shadow px-4 py-8 rounded-md md:p-5 ">
+    <div className="text-center bg-slate-600  shadow px-4 py-8 rounded-md md:p-5">
       <div className="max-w-20 h-20 relative mx-auto">
         <Image
           src={item.image}
