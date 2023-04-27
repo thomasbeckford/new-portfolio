@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CheckProfileButton from "../Molecules/CheckProfileButton";
 import Text from "../../components/Atoms/Text";
+import VanilaTilt from "../Molecules/VanilaTilt";
 
 export default function Home() {
   const nextSection = () => {
@@ -25,7 +26,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative h-64 w-64 mx-auto md:h-96 md:w-96">
+          <VanilaTilt className="relative rounded-full h-64 w-64 mx-auto md:h-96 md:w-96">
             <Image
               priority
               src="/profile/thomas.jpg"
@@ -34,7 +35,7 @@ export default function Home() {
               alt="avatar"
               className="rounded-full object-cover object-top shadow-2xl "
             />
-          </div>
+          </VanilaTilt>
         </div>
       </div>
       <div className="grid place-items-center h-24 bg-slate-500 ">

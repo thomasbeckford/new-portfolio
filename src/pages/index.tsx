@@ -5,8 +5,18 @@ import Projects from "../components/Templates/Projects";
 import Experience from "../components/Templates/Experience";
 import Head from "next/head";
 import FloatingWhatsapp from "../components/Atoms/FloatingWhatsapp";
+import AnimatedIntro from "../components/Templates/AnimatedIntro";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isAnimated, setIsAnimated] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsAnimated(false);
+    }, 2000);
+  }, []);
+
   return (
     <main id="main" className="bg-slate-700 text-white">
       <Head>
@@ -16,15 +26,20 @@ export default function Home() {
         <meta name="description" content="Thomas E. Beckford" key="desc" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
       </Head>
-      <Navbar />
-      <Main />
 
-      <Experience />
-      <Projects />
-      {/* <Contact /> */}
-      <Footer />
+      <AnimatedIntro isAnimated={isAnimated} />
 
-      <FloatingWhatsapp />
+      <div className={isAnimated ? "hidden" : "animate animate-fadeIn"}>
+        <Navbar />
+        <Main />
+
+        <Experience />
+        <Projects />
+        {/* <Contact /> */}
+        <Footer />
+
+        <FloatingWhatsapp />
+      </div>
     </main>
   );
 }
