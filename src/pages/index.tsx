@@ -7,6 +7,13 @@ import Head from "next/head";
 import FloatingWhatsapp from "../components/Atoms/FloatingWhatsapp";
 import AnimatedIntro from "../components/Templates/AnimatedIntro";
 import { useEffect, useState } from "react";
+import { Varela_Round } from "next/font/google";
+
+const varela_round = Varela_Round({
+  style: "normal",
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Home() {
   const [isAnimated, setIsAnimated] = useState(true);
@@ -18,7 +25,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main id="main" className="bg-slate-700 text-white">
+    <main
+      id="main"
+      className={`bg-slate-500 text-slate-50 ${varela_round.className}`}
+    >
       <Head>
         <title>Thomas E. Beckford</title>
         <meta property="og:title" content="Thomas E. Beckford" key="title" />

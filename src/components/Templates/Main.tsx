@@ -17,7 +17,7 @@ export default function Home() {
             <div className="text-xl mb-10  md:mx-auto md:text-left md:text-5xl ">
               <h3
                 className="mb-10 text-white"
-                style={{ textShadow: "1px 1px white" }}
+                style={{ textShadow: "1px 1px #111" }}
               >
                 Helping businesses grow through technology and design doing
                 quality code.

@@ -60,7 +60,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="container mx-auto  space-y-10 bg-slate-600 rounded-lg shadow-md p-0 md:p-16"
+      className="container mx-auto  space-y-10 bg-slate-600 rounded-lg shadow-md p-0 md:p-16 md:my-20"
     >
       <h2 className="text-4xl text-center mb-20 pt-10 md:pt-0">
         Some of the software development projects I&apos;ve contributed to.
