@@ -62,6 +62,9 @@ export default function Experience() {
           </p>
         </div>
       </div>
+      <h2 className="text-4xl text-center mb-20 pt-10 md:pt-0 ">
+        Some skills I&apos;ve acquired over the years
+      </h2>
       <HeroItems />
     </div>
   );

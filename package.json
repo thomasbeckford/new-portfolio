@@ -28,6 +28,7 @@
     "vanilla-tilt": "^1.8.0"
   },
   "devDependencies": {
+    "cypress": "^12.11.0",
     "typescript": "^5.0.4"
   }
 }

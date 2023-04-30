@@ -93,22 +93,3 @@ body {
 .hover-img:hover figcaption {
   opacity: 1;
 }
-
-/* Border Hover */
-
-.border-hover:hover {
-  outline: 0px solid transparent;
-  padding: 4px 4px;
-  border: 3px solid rgb(66, 127, 213);
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius: 12px;
-}
-
-.border-hover {
-  padding: 4px 4px;
-  border: 3px solid transparent;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius: 12px;
-}

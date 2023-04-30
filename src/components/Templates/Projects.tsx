@@ -60,22 +60,22 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="container mx-auto  space-y-10 bg-slate-600 rounded-lg shadow-md p-0 md:p-16 md:my-20"
+      className="container mx-auto  space-y-10 bg-slate-600 rounded-lg shadow-md p-0 md:p-16 md:my-20 "
     >
       <h2 className="text-4xl text-center mb-20 pt-10 md:pt-0">
         Some of the software development projects I&apos;ve contributed to.
       </h2>
 
-      <div className="grid gap-2 justify-items-center 2xl:grid-cols-3 xl:grid-cols-2">
+      <div className="grid gap-2 justify-items-center 2xl:grid-cols-3 xl:grid-cols-2 ">
         {projectItems.map((item) => (
           <div
-            key={item.title}
-            className="relative border-hover bg-gray-700 "
             id={`card-${item.title}`}
+            key={item.title}
+            className=" bg-gray-700 hover:ring-4 ring-blue-500 rounded-lg ring-offset-4 ring-offset-slate-600 transition-all duration-500 ease-in-out"
             onClick={() => openUrl(item.href)}
             onMouseEnter={() => setCopyText("Click to copy url")}
           >
-            <div className="p-5 h-40 rounded-lg hover:bg-slate-500 hover-img">
+            <div className="p-5 h-40 rounded-lg hover:bg-slate-500 hover-img ">
               <div className="gap-5 mx-auto w-full text-center cursor-pointer  flex ">
                 <Toaster />
 
@@ -92,7 +92,7 @@ export default function Projects() {
                   className="m-2"
                   onClick={(e: any) => copyUrl(e, item.href)}
                 >
-                  <h3 className="px-3 py-2 border-4 border-transparent hover:border-red-500 bg-white rounded-lg text-black ">
+                  <h3 className="px-3 py-2 hover:ring-4 ring-red-500 bg-white rounded-lg text-black ">
                     {copyText}
                   </h3>
                 </figcaption>
