@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main
       id="main"
-      className={`bg-slate-500 text-slate-50 ${varela_round.className}`}
+      className={` text-slate-50 ${varela_round.className} bg-zinc-800 `}
     >
       <Head>
         <title>Thomas E. Beckford</title>
@@ -39,13 +39,12 @@ export default function Home() {
 
       <AnimatedIntro isAnimated={isAnimated} />
 
-      <div className={isAnimated ? "hidden" : "animate animate-fadeIn"}>
+      <div className={isAnimated ? "hidden" : "animate animate-fadeIn "}>
         <Navbar />
         <Main />
 
         <Experience />
         <Projects />
-        {/* <Contact /> */}
         <Footer />
 
         <FloatingWhatsapp />

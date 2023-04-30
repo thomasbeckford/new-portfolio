@@ -9,7 +9,7 @@ export default function FloatingWhatsapp() {
           "_blank"
         );
       }}
-      className="fixed w-12 h-12 z-50 bg-white rounded-full bottom-0 right-0 cursor-pointer m-5 md:m-10 md:hover:w-24 md:hover:h-24 transition-all duration-300 md:w-20 md:h-20
+      className="fixed w-10 h-10 z-50 bg-white rounded-full bottom-0 right-0 cursor-pointer m-5 md:m-10 md:w-12 md:h-12 animate animate-bounce
 "
     >
       <Image sizes="200px" src="/whatsapp_logo.png" alt="Whatsapp Logo" fill />

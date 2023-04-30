@@ -3,7 +3,9 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <div id="experience" className="container mx-auto py-10">
+    <div id="experience" className=" container mx-auto  py-10">
+      <h2 className="text-4xl text-center mb-20 pt-10 md:pt-0">About me</h2>
+
       <div className="md:flex md:justify-evenly mb-20 ">
         <div className="gap-4 w-full space-y-10 lg:space-y-0 lg:flex ">
           <figure>
@@ -29,7 +31,7 @@ export default function Experience() {
               height={200}
             />
             <figcaption className="text-center text-sm w-56 mx-auto mt-2">
-              With Kent C. Dodds (React Testing Library Creator)
+              With Kent C. Dodds at Miami Conf
             </figcaption>
           </figure>
 
@@ -42,7 +44,7 @@ export default function Experience() {
               height={200}
             />
             <figcaption className="text-center text-sm w-56 mx-auto mt-2">
-              One of my hobbies is playing the guitar.
+              Recording guitar for my band&apos;s album
             </figcaption>
           </figure>
         </div>
@@ -56,9 +58,12 @@ export default function Experience() {
           <p className="text-lg text-center md:text-right">
             As a self-taught developer with over 5 years of experience, I am
             passionate about meeting new people, playing musical instruments,
-            and continuously learning new things. I am always looking for ways
-            to improve my skills and stay up-to-date with the latest trends in
-            the industry.
+            and continuously learning new things. I enjoy spending my free time
+            at the gym doing boxing and practicing my guitar skills. When it
+            comes to my work, I am driven by my desire to stay up-to-date with
+            the latest trends in the industry and improve my skills, whether it
+            be through attending conferences, taking courses or learning from my
+            peers.
           </p>
         </div>
       </div>

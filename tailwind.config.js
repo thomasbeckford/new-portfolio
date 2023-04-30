@@ -8,6 +8,11 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        flashingMixBlendMode: {
+          "0%": { mixBlendMode: "normal", opacity: 1 },
+          "50%": { mixBlendMode: "difference", opacity: 0.5 },
+          "100%": { mixBlendMode: "normal", opacity: 1 },
+        },
         wave: {
           "0%": {
             transform: "translateY(0) rotate(0)",
@@ -38,6 +43,7 @@ module.exports = {
         wiggle: "wiggle 2s ease-in-out infinite",
         fadeIn: "fadeIn 0.5s ease-out",
         wave: "wave 1s ease-in-out infinite",
+        flashingMixBlendMode: "flashingMixBlendMode .1s 10 ease-in-out ",
       },
     },
   },

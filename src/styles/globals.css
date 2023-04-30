@@ -93,3 +93,18 @@ body {
 .hover-img:hover figcaption {
   opacity: 1;
 }
+
+/* Cursor */
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: slateblue;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out;
+  /* mix-blend-mode: difference; */
+}

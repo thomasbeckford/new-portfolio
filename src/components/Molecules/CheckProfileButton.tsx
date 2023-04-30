@@ -2,7 +2,7 @@ import Button from "../Atoms/Button";
 
 export default function CheckProfileButton() {
   return (
-    <div className="gap-2 hidden md:flex">
+    <div className="gap-2  md:flex">
       <Button
         className="bg-blue-500"
         rounded

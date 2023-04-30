@@ -26,7 +26,7 @@ export default function Home() {
             </div>
           </div>
 
-          <VanilaTilt className="relative rounded-full h-64 w-64 mx-auto md:h-96 md:w-96">
+          <VanilaTilt className="relative rounded-full h-64 w-64 mx-auto md:h-96 md:w-96 ">
             <Image
               priority
               src="/profile/thomas.jpg"
@@ -38,7 +38,7 @@ export default function Home() {
           </VanilaTilt>
         </div>
       </div>
-      <div className="grid place-items-center h-24 bg-slate-500 ">
+      <div className="grid place-items-center h-24 bg-zinc-900">
         <div
           className="flex items-center gap-5 cursor-pointer hover:scale-110 transform transition-all duration-500 ease-in-out animate animate-pulse"
           onClick={nextSection}

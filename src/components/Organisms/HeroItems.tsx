@@ -7,21 +7,21 @@ export default function HeroItems() {
       description:
         "JavaScript superset to build my projects in a type-safe way.",
       href: "/",
-      image: "/typescript.svg",
+      image: "/images/experience/typescript.svg",
     },
     {
       title: "ReactJS & NextJS",
       description:
         "Using these tools to build performant and scalable web applications.",
       href: "",
-      image: "/react.png",
+      image: "/images/experience/react.png",
     },
     {
       title: "Tailwind CSS",
       description:
         "I use this utility-first CSS framework to build my projects.",
       href: "",
-      image: "/tailwind.png",
+      image: "/images/experience/tailwind.png",
     },
 
     {
@@ -29,21 +29,21 @@ export default function HeroItems() {
       description:
         "I have experience with both. I prefer GraphQL for its flexibility and performance. But depends on the project.",
       href: "",
-      image: "/graphql.png",
+      image: "/images/experience/graphql.png",
     },
     {
       title: "Node JS",
       description:
         "Backend services for my projects. I have experience with ExpressJS, NestJS, and Fastify.",
       href: "",
-      image: "/node.png",
+      image: "/images/experience/node.png",
     },
     {
       title: "Cypress & Jest",
       description:
         "Testing is a must for every project. I use these tools to test my projects.",
       href: "",
-      image: "/cypress.png",
+      image: "/images/experience/cypress.png",
     },
   ];
 

@@ -7,7 +7,7 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="bg-slate-100 ">
+    <div id="contact" className="bg-zinc-100 ">
       <div className="container mx-auto p-16 space-y-10 md:px-56">
         <Text className="text-center" size="title">
           Ready to Transform your growth

@@ -1,6 +1,7 @@
 import "@/src/styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
+import Cursor from "../components/Atoms/Cursor";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
           />
         </>
       )}
+      <Cursor />
       <Component {...pageProps} />
     </>
   );
