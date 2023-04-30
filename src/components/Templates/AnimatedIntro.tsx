@@ -23,7 +23,7 @@ export default function AnimatedIntro(props: Props) {
       <div className="animate animate-fadeIn text-center">
         <h1 className="text-4xl md:text-6xl font-bold">Thomas E. Beckford</h1>
         <h2 className="text-2xl md:text-4xl font-bold animate-flashingMixBlendMode">
-          Software Engineer
+          Software Developer
         </h2>
       </div>
     </div>

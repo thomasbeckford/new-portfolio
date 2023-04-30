@@ -52,7 +52,7 @@ export default function Experience() {
         <div className="  mx-auto mt-10 md:w-7/12">
           <h2 className="text-xl text-center mb-5 md:text-4xl md:text-right">
             Hi, I&apos;m Thomas E. Beckford.
-            <br />I am a software engineer.
+            <br />I am a software developer.
           </h2>
 
           <p className="text-lg text-center md:text-right">
