@@ -37,9 +37,8 @@ export default function Navbar() {
             <MobileBurger toggle={toggle} />
           </div>
         </div>
-
-        <div className={`${isOpen ? "block " : "hidden"} md:hidden  `}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
+        <div className={`${isOpen ? "block " : "hidden "} md:hidden`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 animate-fadeIn">
             <NavLinks />
           </div>
         </div>

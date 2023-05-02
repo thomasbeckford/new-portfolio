@@ -11,7 +11,7 @@ export default function NavLink(props: LinkProps) {
   const { name, href, className } = props;
 
   const defaultStyles = {
-    link: "block rounded-md text-base font-bold hover-underline-animation ",
+    link: "block rounded-md text-base font-bold md:hover-underline-animation ",
   };
 
   const classProps: string = classnames(defaultStyles.link, className);

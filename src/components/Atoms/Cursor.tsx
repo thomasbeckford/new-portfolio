@@ -17,9 +17,9 @@ const Cursor = () => {
 
   return (
     <div
-      className="cursor "
+      className="md:cursor "
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
-    ></div>
+    />
   );
 };
 
