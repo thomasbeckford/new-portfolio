@@ -18,10 +18,10 @@ const projectItems = [
     image: "/images/projects/fuel.svg",
   },
   {
-    title: "TurkishFlava",
-    description: `TurkishFlava is a platform to sell NFTs for events and concerts in Turkey.`,
-    href: "https://turkishflava.io/",
-    image: "/images/projects/turkishflava.jpeg",
+    title: "Mat.Joe",
+    description: `Mat.Joe the 1st NFT drop, bringing tomorrowland Djs MAT.JOE to your house party`,
+    href: "https://www.matjoelabamba.io/",
+    image: "/images/projects/matjoe.jpeg",
   },
 
   {
