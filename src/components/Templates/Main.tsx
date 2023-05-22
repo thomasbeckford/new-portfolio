@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CheckProfileButton from "../Molecules/CheckProfileButton";
+import BookMeetingButton from "../Molecules/BookAMeetingButton";
 import Text from "../../components/Atoms/Text";
 import VanilaTilt from "../Molecules/VanilaTilt";
 
@@ -22,7 +23,10 @@ export default function Home() {
                 Helping businesses grow through technology and design doing
                 quality code.
               </h3>
-              <CheckProfileButton />
+              <div className="w-full space-y-2 md:space-y-0 md:flex gap-2">
+                <CheckProfileButton />
+                <BookMeetingButton />
+              </div>
             </div>
           </div>
 

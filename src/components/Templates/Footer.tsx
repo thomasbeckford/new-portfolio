@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Text from "../Atoms/Text";
+
 export default function Footer() {
   return (
     <footer className=" text-center bg-zinc-900 lg:text-left mt-10">
-      <div className=" container mx-auto ">
+      <div className="container mx-auto ">
         <div className=" py-10 text-center md:text-left">
           <div className="grid-1 grid md:grid-cols-3 md:justify-items-center">
             <div className="w-full">

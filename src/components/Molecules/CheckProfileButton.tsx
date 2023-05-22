@@ -4,7 +4,7 @@ export default function CheckProfileButton() {
   return (
     <div className="gap-2  md:flex">
       <Button
-        className="bg-blue-500"
+        className="bg-violet-800 hover:bg-violet-600 rounded-lg border-none text-white drop-shadow-lg"
         rounded
         onClick={() => {
           window.open(
