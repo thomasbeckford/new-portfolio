@@ -11,6 +11,20 @@ const projectItems = [
     image: "/images/projects/soymenu.svg",
   },
   {
+    title: "Fuel",
+    description:
+      "Fuel helps creators build their own platform where they can engage directly with their fans ans monetize independently.",
+    href: "https://www.onfuel.io/",
+    image: "/images/projects/fuel.svg",
+  },
+  {
+    title: "TurkishFlava",
+    description: `TurkishFlava is a platform to sell NFTs for events and concerts in Turkey.`,
+    href: "https://turkishflava.io/",
+    image: "/images/projects/turkishflava.jpeg",
+  },
+
+  {
     title: "SpiritSwap v2",
     description: `
       Decentralized exchange that offers trading, staking, farming, and now lending services to incentivize participants on the network.
@@ -25,22 +39,23 @@ const projectItems = [
     image: "/images/projects/fitgmr.jpeg",
   },
   {
-    title: "LevyGorvy App",
-    description: `Custom CRM for the art gallery to manage their clients and their art pieces.`,
-    href: "https://www.levygorvy.com/",
-    image: "/images/projects/levygorvy.png",
-  },
-  {
     title: "SwiftDoc App",
     description: `Platform that connects patients with doctors and medical professionals in real-time.`,
     href: "https://swiftdoc.com/",
     image: "/images/projects/swiftdoc.jpeg",
   },
+
   {
     title: "First On Site",
     description: `First On Site Restoration is a full-service restoration company that provides emergency services.`,
     href: "https://firstonsite.com/",
     image: "/images/projects/first-on-site.jpeg",
+  },
+  {
+    title: "LevyGorvy App",
+    description: `Custom CRM for the art gallery to manage their clients and their art pieces.`,
+    href: "https://www.levygorvy.com/",
+    image: "/images/projects/levygorvy.png",
   },
 ];
 
@@ -106,10 +121,6 @@ export default function Projects() {
             </div>
           ))}
         </div>
-
-        <h2 className="text-2xl text-center mb-20 pt-10 md:pt-0">
-          And many more...
-        </h2>
       </div>
     </div>
   );
