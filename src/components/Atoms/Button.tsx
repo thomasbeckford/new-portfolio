@@ -22,8 +22,7 @@ export default function Button(props: ButtonProps) {
   } = props;
 
   const defaultStyles = {
-    button:
-      "bg-white text-slate-900 font-bold border-2 border-gray-200 py-4 px-8",
+    button: " text-slate-900 font-bold border-2 border-gray-200 py-4 px-8",
     disabled: "opacity-50 cursor-not-allowed",
     rounded: "rounded-full",
   };
