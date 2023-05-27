@@ -44,12 +44,12 @@ export default function Home() {
       </div>
       <div className="grid place-items-center h-24 bg-zinc-900">
         <div
-          className="flex items-center gap-5 cursor-pointer hover:scale-110 transform transition-all duration-500 ease-in-out animate animate-pulse"
+          className="flex items-center gap-5  hover:scale-110 transform transition-all duration-500 ease-in-out animate animate-pulse"
           onClick={nextSection}
         >
           <Image
             src="/arrow-down-circle.svg"
-            className="mx-auto  cursor-pointer pb-5 mt-5 "
+            className="mx-auto   pb-5 mt-5 "
             width={50}
             height={50}
             alt="arrow"

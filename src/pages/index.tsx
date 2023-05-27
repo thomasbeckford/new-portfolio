@@ -8,6 +8,7 @@ import FloatingWhatsapp from "../components/Atoms/FloatingWhatsapp";
 import AnimatedIntro from "../components/Templates/AnimatedIntro";
 import { useEffect, useState } from "react";
 import { Varela_Round } from "next/font/google";
+import dynamic from "next/dynamic";
 
 const varela_round = Varela_Round({
   style: "normal",
@@ -17,6 +18,9 @@ const varela_round = Varela_Round({
 
 export default function Home() {
   const [isAnimated, setIsAnimated] = useState(true);
+  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+    ssr: false,
+  });
 
   useEffect(() => {
     setTimeout(() => {
@@ -41,6 +45,7 @@ export default function Home() {
 
       <div className={isAnimated ? "hidden" : "animate animate-fadeIn "}>
         <Navbar />
+
         <Main />
 
         <Experience />
@@ -48,6 +53,16 @@ export default function Home() {
         <Footer />
 
         <FloatingWhatsapp />
+
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={8}
+          color="193, 11, 111"
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+          clickables={["a", "button", ".link", ".hover-img"]}
+        />
       </div>
     </main>
   );

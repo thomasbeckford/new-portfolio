@@ -89,7 +89,7 @@ export default function Projects() {
               onMouseEnter={() => setCopyText("Click to copy url")}
             >
               <div className="p-5 h-40 rounded-lg hover:bg-zinc-800 hover-img ">
-                <div className="gap-5 mx-auto w-full text-center cursor-pointer  flex ">
+                <div className="gap-5 mx-auto w-full text-center  flex ">
                   <Toaster />
 
                   <figure className="w-20 h-24 relative mx-auto md:w-40 md:h-24 ">

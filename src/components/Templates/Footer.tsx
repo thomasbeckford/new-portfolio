@@ -137,7 +137,7 @@ export default function Footer() {
 
           <Text size="sm" className="mt-5">
             with <span className="animate-pulse text-red-500">♥</span> by
-            <span className="text-blue-300 ml-1 cursor-pointer">Thomas</span>
+            <span className="text-blue-300 ml-1">Thomas</span>
           </Text>
           <a
             className="font-semibold  "
