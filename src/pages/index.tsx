@@ -16,11 +16,12 @@ const varela_round = Varela_Round({
   weight: "400",
 });
 
+const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+  ssr: false,
+});
+
 export default function Home() {
   const [isAnimated, setIsAnimated] = useState(true);
-  const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-    ssr: false,
-  });
 
   useEffect(() => {
     setTimeout(() => {

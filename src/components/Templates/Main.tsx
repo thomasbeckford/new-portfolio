@@ -3,6 +3,7 @@ import CheckProfileButton from "../Molecules/CheckProfileButton";
 import BookMeetingButton from "../Molecules/BookAMeetingButton";
 import Text from "../../components/Atoms/Text";
 import VanilaTilt from "../Molecules/VanilaTilt";
+import DownloadResumeButton from "../Molecules/DownloadResumeButton";
 
 export default function Home() {
   const nextSection = () => {
@@ -26,6 +27,9 @@ export default function Home() {
               <div className="w-full space-y-2 md:space-y-0 md:flex gap-2">
                 <CheckProfileButton />
                 <BookMeetingButton />
+              </div>
+              <div className="mt-3 md:mt-0 ">
+                <DownloadResumeButton />
               </div>
             </div>
           </div>
