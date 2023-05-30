@@ -5,6 +5,12 @@ import { Toaster } from "react-hot-toast";
 
 const projectItems = [
   {
+    title: "Scroll Animated",
+    description: `A simple scroll animation portfolio using React Next FramerMotion and Tailwind.`,
+    href: "https://scroll-animated.vercel.app/",
+    image: "/videos/scroll-animated.mov",
+  },
+  {
     title: "Soy Menu",
     description: `Provides a service to create digital menus for restaurants, with an easy and straightforward process for restaurant owners to use.`,
     href: "https://soymenu.com",
@@ -92,15 +98,28 @@ export default function Projects() {
                 <div className="gap-5 mx-auto w-full text-center  flex ">
                   <Toaster />
 
-                  <figure className="w-20 h-24 relative mx-auto md:w-40 md:h-24 ">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      unoptimized
-                      className="object-contain"
-                    />
-                  </figure>
+                  {item.image.includes(".mov") ? (
+                    <video
+                      className="w-20 h-24 relative mx-auto md:w-40 md:h-24 "
+                      autoPlay
+                      loop
+                      muted
+                    >
+                      <source src={item.image} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <figure className="w-20 h-24 relative mx-auto md:w-40 md:h-24 ">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        unoptimized
+                        className="object-contain"
+                      />
+                    </figure>
+                  )}
+
                   <figcaption
                     className="m-2"
                     onClick={(e: any) => copyUrl(e, item.href)}

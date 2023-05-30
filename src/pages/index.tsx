@@ -46,15 +46,11 @@ export default function Home() {
 
       <div className={isAnimated ? "hidden" : "animate animate-fadeIn "}>
         <Navbar />
-
         <Main />
-
         <Experience />
         <Projects />
         <Footer />
-
         <FloatingWhatsapp />
-
         <AnimatedCursor
           innerSize={8}
           outerSize={8}
