@@ -14,21 +14,16 @@ export default function Home() {
   return (
     <div id="home">
       <div className="container mx-auto relative">
-        <div className="m-10 md:flex md:justify-center md:items-center md:m-0 md:mt-10 md:pb-56">
+        <div className="m-10 md:flex md:justify-center md:items-center md:m-0 md:mt-20 md:pb-48">
           <div className="text-center md:w-5/12 md:mx-auto md:align-center">
             <div className="text-xl mb-10  md:mx-auto md:text-left md:text-5xl ">
-              <h3
-                className="mb-10 text-white"
-                style={{ textShadow: "1px 1px #111" }}
-              >
+              <h3 className="mb-20 text-white">
                 Helping businesses grow through technology and design doing
                 quality code.
               </h3>
-              <div className="w-full space-y-2 md:space-y-0 md:flex gap-2">
+              <div className="w-full space-y-3 ">
                 <CheckProfileButton />
                 <BookMeetingButton />
-              </div>
-              <div className="mt-3 md:mt-0 ">
                 <DownloadResumeButton />
               </div>
             </div>
@@ -46,20 +41,16 @@ export default function Home() {
           </VanilaTilt>
         </div>
       </div>
-      <div className="grid place-items-center h-24 bg-zinc-900">
-        <div
-          className="flex items-center gap-5  hover:scale-110 transform transition-all duration-500 ease-in-out animate animate-pulse"
-          onClick={nextSection}
-        >
-          <Image
-            src="/arrow-down-circle.svg"
-            className="mx-auto   pb-5 mt-5 "
-            width={50}
-            height={50}
-            alt="arrow"
-          />
-          <Text className="font-bold text-xl">Learn more about Thomas</Text>
-        </div>
+
+      <div className="text-center" onClick={nextSection}>
+        <Text className="font-bold text-xl">Learn more about Thomas</Text>
+        <Image
+          src="/arrow-down-circle.svg"
+          className="mx-auto pb-5 mt-5 animate animate-pulse hover:scale-110 transform transition-all duration-500 ease-in-out"
+          width={50}
+          height={50}
+          alt="arrow"
+        />
       </div>
     </div>
   );

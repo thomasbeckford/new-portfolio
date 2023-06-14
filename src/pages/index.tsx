@@ -9,6 +9,7 @@ import AnimatedIntro from "../components/Templates/AnimatedIntro";
 import { useEffect, useState } from "react";
 import { Varela_Round } from "next/font/google";
 import dynamic from "next/dynamic";
+import BubblesBackground from "../components/Molecules/BubblesBackground";
 
 const varela_round = Varela_Round({
   style: "normal",
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <main
       id="main"
-      className={` text-slate-50 ${varela_round.className} bg-zinc-800 `}
+      className={` text-slate-50 ${varela_round.className}  bg-gradient-to-b from-indigo-500 from-10% via-sky-500 via-20% to-blue-800 to-90% `}
     >
       <Head>
         <title>Thomas E. Beckford</title>
@@ -45,6 +46,10 @@ export default function Home() {
       <AnimatedIntro isAnimated={isAnimated} />
 
       <div className={isAnimated ? "hidden" : "animate animate-fadeIn "}>
+        <div className="hidden md:block">
+          <BubblesBackground />
+        </div>
+
         <Navbar />
         <Main />
         <Experience />

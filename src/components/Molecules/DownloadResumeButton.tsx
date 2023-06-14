@@ -18,7 +18,8 @@ export default function DownloadResumeButton() {
 
   return (
     <Button
-      className="bg-blue-800 hover:bg-blue-600 rounded-lg border-none text-white drop-shadow-lg transition-all"
+      leftIcon="📄"
+      className="bg-blue-800 hover:bg-blue-600 rounded-lg border-none text-white drop-shadow-lg transition-all w-full"
       rounded
       onClick={handleDownload}
     >

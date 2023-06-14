@@ -2,6 +2,7 @@ import classnames from "classnames";
 
 type ButtonProps = {
   children: React.ReactNode;
+  leftIcon?: React.ReactNode;
   rounded?: boolean;
   className?: string;
   disabled?: boolean;
@@ -18,11 +19,14 @@ export default function Button(props: ButtonProps) {
     className,
     size = "md",
     type = "button",
+    leftIcon,
     onClick,
   } = props;
 
   const defaultStyles = {
-    button: " text-slate-900 font-bold border-2 border-gray-200 py-4 px-8",
+    button: `text-slate-900 font-bold border-2 border-gray-200 py-4 px-8 ${
+      leftIcon ? "flex items-center gap-2" : ""
+    }`,
     disabled: "opacity-50 cursor-not-allowed",
     rounded: "rounded-full",
   };
@@ -43,6 +47,7 @@ export default function Button(props: ButtonProps) {
 
   return (
     <button type={type} className={classProps} onClick={onClick}>
+      <span className="flex items-center gap-2">{leftIcon}</span>
       {children}
     </button>
   );

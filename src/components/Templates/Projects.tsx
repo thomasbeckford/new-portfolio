@@ -84,17 +84,17 @@ export default function Projects() {
         Some of the software development projects I&apos;ve contributed to.
       </h2>
 
-      <div className=" container mx-auto  space-y-10 bg-zinc-700 rounded-lg shadow-md p-0 md:p-16  ">
+      <div className=" container mx-auto  space-y-10  rounded-lg  p-0 md:p-16  ">
         <div className="grid gap-2 justify-items-center 2xl:grid-cols-3 xl:grid-cols-2 ">
           {projectItems.map((item) => (
             <div
               id={`card-${item.title}`}
               key={item.title}
-              className=" hover:ring-4 ring-blue-500 rounded-lg ring-offset-4 ring-offset-zinc-700 transition-all duration-500 ease-in-out "
+              className="shadow-2xl rounded-lg ring-offset-4  transition-all duration-500 ease-in-out "
               onClick={() => openUrl(item.href)}
               onMouseEnter={() => setCopyText("Click to copy url")}
             >
-              <div className="p-5 h-40 rounded-lg hover:bg-zinc-800 hover-img ">
+              <div className="p-5 h-40 rounded-lg  hover-img ">
                 <div className="gap-5 mx-auto w-full text-center  flex ">
                   <Toaster />
 
@@ -124,16 +124,18 @@ export default function Projects() {
                     className="m-2"
                     onClick={(e: any) => copyUrl(e, item.href)}
                   >
-                    <h3 className="px-3 py-2 hover:ring-4 ring-red-500 bg-white rounded-lg text-black ">
+                    <p className="px-3 py-2 hover:ring-4 ring-red-500 bg-white rounded-lg text-black ">
                       {copyText}
-                    </h3>
+                    </p>
                   </figcaption>
 
                   <div className="w-5/6">
                     <Text size="xl" className="mb-2">
                       {item.title}
                     </Text>
-                    <Text size="md">{item.description}</Text>
+                    <Text size="sm" className="text-right font-poppins">
+                      {item.description}
+                    </Text>
                   </div>
                 </div>
               </div>
