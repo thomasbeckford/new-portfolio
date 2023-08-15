@@ -8,17 +8,11 @@ import FloatingWhatsapp from "../components/Atoms/FloatingWhatsapp";
 import AnimatedIntro from "../components/Templates/AnimatedIntro";
 import { useEffect, useState } from "react";
 import { Varela_Round } from "next/font/google";
-import dynamic from "next/dynamic";
-import BubblesBackground from "../components/Molecules/BubblesBackground";
 
 const varela_round = Varela_Round({
   style: "normal",
   subsets: ["latin"],
   weight: "400",
-});
-
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
 });
 
 export default function Home() {
@@ -46,25 +40,12 @@ export default function Home() {
       <AnimatedIntro isAnimated={isAnimated} />
 
       <div className={isAnimated ? "hidden" : "animate animate-fadeIn "}>
-        <div className="hidden md:block">
-          <BubblesBackground />
-        </div>
-
         <Navbar />
         <Main />
         <Experience />
         <Projects />
         <Footer />
         <FloatingWhatsapp />
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={8}
-          color="193, 11, 111"
-          outerAlpha={0.2}
-          innerScale={0.7}
-          outerScale={5}
-          clickables={["a", "button", ".link", ".hover-img"]}
-        />
       </div>
     </main>
   );

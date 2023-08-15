@@ -1,5 +1,4 @@
 import "@/src/styles/globals.css";
-import "@/src/styles/bubbles.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 

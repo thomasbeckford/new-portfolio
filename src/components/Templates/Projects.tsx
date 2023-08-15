@@ -5,17 +5,20 @@ import { Toaster } from "react-hot-toast";
 
 const projectItems = [
   {
-    title: "Scroll Animated",
-    description: `A simple scroll animation portfolio using React Next FramerMotion and Tailwind.`,
-    href: "https://scroll-animated.vercel.app/",
-    image: "/videos/scroll-animated.mov",
-  },
-  {
     title: "Soy Menu",
     description: `Provides a service to create digital menus for restaurants, with an easy and straightforward process for restaurant owners to use.`,
     href: "https://soymenu.com",
     image: "/images/projects/soymenu.svg",
   },
+  {
+    title: "SpiritSwap v2",
+    description: `
+      Decentralized exchange that offers trading, staking, farming, and now lending services to incentivize participants on the network.
+      `,
+    href: "https://spiritswap.finance/",
+    image: "/images/projects/spiritswap.png",
+  },
+
   {
     title: "Fuel",
     description:
@@ -30,14 +33,6 @@ const projectItems = [
     image: "/images/projects/matjoe.jpeg",
   },
 
-  {
-    title: "SpiritSwap v2",
-    description: `
-      Decentralized exchange that offers trading, staking, farming, and now lending services to incentivize participants on the network.
-      `,
-    href: "https://spiritswap.finance/",
-    image: "/images/projects/spiritswap.png",
-  },
   {
     title: "FitGMR App",
     description: `A complete esports performance and player development system that provides game coaching, health and wellness services to gamers`,
@@ -62,6 +57,12 @@ const projectItems = [
     description: `Custom CRM for the art gallery to manage their clients and their art pieces.`,
     href: "https://www.levygorvy.com/",
     image: "/images/projects/levygorvy.png",
+  },
+  {
+    title: "Scroll Animated",
+    description: `A simple scroll animation portfolio using React Next FramerMotion and Tailwind.`,
+    href: "https://scroll-animated.vercel.app/",
+    image: "/videos/scroll-animated.mov",
   },
 ];
 
@@ -90,7 +91,7 @@ export default function Projects() {
             <div
               id={`card-${item.title}`}
               key={item.title}
-              className="shadow-2xl rounded-lg ring-offset-4  transition-all duration-500 ease-in-out "
+              className="shadow-2xl rounded-lg ring-offset-4  transition-all duration-500 ease-in-out bg-blue-700 cursor-pointer"
               onClick={() => openUrl(item.href)}
               onMouseEnter={() => setCopyText("Click to copy url")}
             >

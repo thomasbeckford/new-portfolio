@@ -3,7 +3,7 @@ import Button from "../Atoms/Button";
 export default function DownloadResumeButton() {
   const handleDownload = async () => {
     try {
-      const response = await fetch("/Thomas_Beckford_Resume_2023.pdf");
+      const response = await fetch("/1_Thomas_Beckford_Resume_2023.pdf");
       const blob = await response.blob();
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
